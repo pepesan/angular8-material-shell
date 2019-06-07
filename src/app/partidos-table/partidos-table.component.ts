@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {DataService} from '../data.service';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-partidos-table',
   templateUrl: './partidos-table.component.html',
@@ -12,7 +13,7 @@ export class PartidosTableComponent implements OnInit {
   dataSource = new MatTableDataSource();
   @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: false}) sort: MatSort;
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private router: Router) {}
 
   ngOnInit() {
     this.dataService.getData().subscribe( data => {
@@ -28,6 +29,20 @@ export class PartidosTableComponent implements OnInit {
     filterValue = filterValue.trim(); // Remove whitespace
     filterValue = filterValue.toLowerCase(); // Datasource defaults to lowercase matches
     this.dataSource.filter = filterValue;
+  }
+  createItem() {
+    this.router.navigate(['/form']);
+  }
+  showItem(row) {
+    console.log(row);
+    this.router.navigate(['/listado/' + row.nombre]);
+  }
+  editItem(row) {
+    this.router.navigate(['/form/' + row.nombre]);
+    console.log(row);
+  }
+  deleteItem(row) {
+    console.log(row);
   }
 }
 

@@ -30,6 +30,8 @@ import { AboutComponent } from './pages/about/about.component';
 import {DataService} from './data.service';
 import { PartidosTableComponent } from './partidos-table/partidos-table.component';
 import {FormsModule} from '@angular/forms';
+import {FormComponent} from './pages/form/form.component';
+import {DetailComponent} from './pages/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import {FormsModule} from '@angular/forms';
     ToolbarComplejaComponent,
     HomeComponent,
     AboutComponent,
-    PartidosTableComponent
+    PartidosTableComponent,
+    FormComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

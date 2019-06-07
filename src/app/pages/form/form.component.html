@@ -10,7 +10,8 @@
         <mat-label>Nombre</mat-label>
         <input  matInput  placeholder="Nombre"
                 [(ngModel)]="modelo.nombre"  name="nombre"
-                required minlength="4" maxlength="20" #nombre='ngModel'>
+                required minlength="4" maxlength="20"
+                #nombre='ngModel'>
         <div *ngIf="formulario.submitted && formulario.invalid">
           <div [hidden]="!nombre.errors.required">
             El Nombre no debe estar vacío
@@ -25,7 +26,7 @@
       </mat-form-field>
       <mat-form-field>
         <mat-label>Diputados</mat-label>
-        <input  matInput  placeholder="Nombre" type="number"
+        <input  matInput  placeholder="Número Dipus" type="number"
                 [(ngModel)]="modelo.dipu"  name="dipu"
                 required  #dipu='ngModel'>
         <div *ngIf="formulario.submitted && formulario.invalid">

@@ -17,21 +17,29 @@ import {
   MatPaginatorModule,
   MatSortModule,
   MatProgressSpinnerModule,
-  MatFormFieldModule, MatInputModule
+  MatFormFieldModule, MatInputModule, MatTabsModule, MatCheckboxModule, MatSelectModule, MatDatepickerModule, MatRadioModule
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MenuDesplegableComponent } from './menu-desplegable/menu-desplegable.component';
-import { SidenavSimpleComponent } from './sidenav-simple/sidenav-simple.component';
-import { ToolbarSimpleComponent } from './toolbar-simple/toolbar-simple.component';
-import { ToolbarComplejaComponent } from './toolbar-compleja/toolbar-compleja.component';
+import { MenuDesplegableComponent } from './demos/menu-desplegable/menu-desplegable.component';
+import { SidenavSimpleComponent } from './demos/sidenav-simple/sidenav-simple.component';
+import { ToolbarSimpleComponent } from './demos/toolbar-simple/toolbar-simple.component';
+import { ToolbarComplejaComponent } from './demos/toolbar-compleja/toolbar-compleja.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import {DataService} from './data.service';
-import { PartidosTableComponent } from './partidos-table/partidos-table.component';
+import {DataService} from './pages/data.service';
+import { PartidosTableComponent } from './pages/partidos-table/partidos-table.component';
 import {FormsModule} from '@angular/forms';
 import {FormComponent} from './pages/form/form.component';
 import {DetailComponent} from './pages/detail/detail.component';
+import {FormDemoComponent} from './demos/form-demo/form-demo.component';
+import {FormDemo2Component} from './demos/form-demo2/form-demo2.component';
+import {FormLoginComponent} from './demos/form-login/form-login.component';
+import {VirtualScrollComponent} from './demos/virtual-scroll/virtual-scroll.component';
+import {DragDropComponent} from './demos/drag-drop/drag-drop.component';
+import {FlexLayoutBasicComponent} from './demos/flex-layout-basic/flex-layout-basic.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -44,7 +52,13 @@ import {DetailComponent} from './pages/detail/detail.component';
     AboutComponent,
     PartidosTableComponent,
     FormComponent,
-    DetailComponent
+    DetailComponent,
+    FormDemoComponent,
+    FormDemo2Component,
+    FormLoginComponent,
+    VirtualScrollComponent,
+    DragDropComponent,
+    FlexLayoutBasicComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +81,13 @@ import {DetailComponent} from './pages/detail/detail.component';
     MatProgressSpinnerModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTabsModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    DragDropModule,
+    ScrollingModule,
     FormsModule
   ],
   providers: [DataService],

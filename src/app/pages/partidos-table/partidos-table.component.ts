@@ -10,6 +10,7 @@ import {Router} from '@angular/router';
 export class PartidosTableComponent implements OnInit {
   displayedColumns = ['nombre', 'dipu', 'imagen', 'actions'];
   resultsLength: number;
+  isLoadingResults = true;
   dataSource = new MatTableDataSource();
   @ViewChild(MatPaginator, {static: false}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: false}) sort: MatSort;
@@ -17,11 +18,12 @@ export class PartidosTableComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.getData().subscribe( data => {
-      console.log(data);
+      // console.log(data);
       this.dataSource.data = data;
       this.resultsLength = data.length;
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.isLoadingResults = false;
     });
   }
 

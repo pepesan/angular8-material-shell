@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Partido} from '../../partido';
+import {Partido} from '../partido';
 
 @Component({
   selector: 'app-detail',
@@ -14,7 +14,7 @@ export class DetailComponent implements OnInit {
     this.route.params.subscribe((data) => {
       this.partido.nombre = data.id;
     });
-    console.log(this.partido);
+    // console.log(this.partido);
   }
   volver() {
     this.router.navigate(['/home']);

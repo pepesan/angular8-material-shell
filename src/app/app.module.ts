@@ -4,22 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {
-  MatButtonModule,
-  MatNativeDateModule,
-  MatIconModule,
-  MatSidenavModule,
-  MatListModule,
-  MatToolbarModule,
-  MatMenuModule,
-  MatCardModule,
-  MatTableModule,
-  MatPaginatorModule,
-  MatSortModule,
-  MatProgressSpinnerModule,
-  MatFormFieldModule, MatInputModule, MatTabsModule, MatCheckboxModule, MatSelectModule, MatDatepickerModule, MatRadioModule
-} from '@angular/material';
-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MenuDesplegableComponent } from './demos/menu-desplegable/menu-desplegable.component';
 import { SidenavSimpleComponent } from './demos/sidenav-simple/sidenav-simple.component';
@@ -40,6 +24,7 @@ import {DragDropComponent} from './demos/drag-drop/drag-drop.component';
 import {FlexLayoutBasicComponent} from './demos/flex-layout-basic/flex-layout-basic.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import {AngularImportsModule} from './angular-imports/angular-imports.module';
 
 @NgModule({
   declarations: [
@@ -65,30 +50,11 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatNativeDateModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
-    MatMenuModule,
-    MatCardModule,
-    MatToolbarModule,
     FlexLayoutModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatProgressSpinnerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatTabsModule,
-    MatCheckboxModule,
-    MatSelectModule,
-    MatDatepickerModule,
-    MatRadioModule,
     DragDropModule,
     ScrollingModule,
-    FormsModule
+    FormsModule,
+    AngularImportsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

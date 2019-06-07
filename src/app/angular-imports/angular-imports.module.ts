@@ -1,0 +1,73 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {
+  MatButtonModule,
+  MatNativeDateModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatListModule,
+  MatToolbarModule,
+  MatMenuModule,
+  MatCardModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatProgressSpinnerModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatTabsModule,
+  MatCheckboxModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatRadioModule,
+  MatSliderModule
+} from '@angular/material';
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatNativeDateModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTabsModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatSliderModule
+  ],
+  exports : [
+    MatButtonModule,
+    MatNativeDateModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTabsModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatSliderModule
+  ]
+})
+export class AngularImportsModule { }

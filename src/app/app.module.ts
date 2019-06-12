@@ -25,6 +25,7 @@ import {FlexLayoutBasicComponent} from './demos/flex-layout-basic/flex-layout-ba
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {AngularImportsModule} from './angular-imports/angular-imports.module';
+import { DemosComponent } from './pages/demos/demos.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {AngularImportsModule} from './angular-imports/angular-imports.module';
     FormLoginComponent,
     VirtualScrollComponent,
     DragDropComponent,
-    FlexLayoutBasicComponent
+    FlexLayoutBasicComponent,
+    DemosComponent
   ],
   imports: [
     BrowserModule,

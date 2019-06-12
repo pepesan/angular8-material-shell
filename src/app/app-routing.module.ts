@@ -4,6 +4,7 @@ import {HomeComponent} from './pages/home/home.component';
 import {AboutComponent} from './pages/about/about.component';
 import {FormComponent} from './pages/form/form.component';
 import {DetailComponent} from './pages/detail/detail.component';
+import {DemosComponent} from './pages/demos/demos.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'form', component: FormComponent },
   { path: 'listado/:id', component: DetailComponent },
   { path: 'form/:id', component: FormComponent },
+  { path: 'demos', component: DemosComponent },
 ];
 
 @NgModule({
